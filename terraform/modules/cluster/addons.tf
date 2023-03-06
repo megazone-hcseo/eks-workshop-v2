@@ -23,7 +23,7 @@ locals {
 }
 
 module "eks_blueprints_kubernetes_addons" {
-  source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.16.0//modules/kubernetes-addons"
+  source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.25.0//modules/kubernetes-addons"
 
   depends_on = [
     aws_eks_addon.vpc_cni
@@ -324,7 +324,7 @@ locals {
 }
 
 module "eks_blueprints_kubernetes_grafana_addon" {
-  source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.16.0//modules/kubernetes-addons/grafana"
+  source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.25.0//modules/kubernetes-addons/grafana"
 
   depends_on = [
     module.eks_blueprints_kubernetes_addons

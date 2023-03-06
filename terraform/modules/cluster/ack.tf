@@ -3,7 +3,7 @@ locals {
 }
 
 module "ec2" {
-  source = "github.com/aws-ia/terraform-aws-eks-blueprints//modules/kubernetes-addons/helm-addon?ref=v4.12.2"
+  source = "github.com/aws-ia/terraform-aws-eks-blueprints//modules/kubernetes-addons/helm-addon?ref=v4.25.0"
 
   helm_config = {
     name             = local.ec2_name

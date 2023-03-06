@@ -5,7 +5,7 @@ locals {
 }
 
 module "eks_blueprints" {
-  source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.16.0"
+  source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.25.0"
 
   tags = local.tags
 
